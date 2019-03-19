@@ -47,11 +47,23 @@ app.post("/", function(req, res) {
   // 3) request
   request(options, function(error, response, body) {
     if (error) {
-      console.log(error);
+      res.send("There was an error with sign up. Please try again.");
     } else {
-      console.log(response.statusCode);
+      if (response.statusCode === 200) {
+        res.sendFile(__dirname + "/success.html");
+      } else {
+        res.sendFile(__dirname + "/failure.html");
+      }
     }
   });
+});
+
+app.post("/success", function(req, res) {
+  res.redirect("/");
+});
+
+app.post("/failure", function(req, res) {
+  res.redirect("/");
 });
 
 app.listen(3000, function() {
