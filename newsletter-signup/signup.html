@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Signin Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.1/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <form action="/" method="post" class="form-signin">
+      <img
+        class="mb-4"
+        src="./images/pineapple.png"
+        alt="pineapple logo"
+        width="72"
+        height="72"
+        style="border: 2px solid black; border-radius:50%; padding:10px;"
+        ;
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Signup for our Newsletter!</h1>
+      <label for="inputFirstName" class="sr-only">Firstname</label>
+      <input
+        name="fName"
+        type="text"
+        id="inputFirstName"
+        class="form-control input-top"
+        placeholder="First Name"
+        required
+        autofocus
+      />
+      <label for="inputLastName" class="sr-only">Lastname</label>
+      <input
+        name="lName"
+        type="text"
+        id="inputLastName"
+        class="form-control input-middle"
+        placeholder="Last Name"
+        required
+      />
+
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input
+        name="email"
+        type="email"
+        id="inputEmail"
+        class="form-control input-bottom"
+        placeholder="Email address"
+        required
+      />
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Sign me up!
+      </button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+    </form>
+  </body>
+</html>
