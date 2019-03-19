@@ -40,8 +40,8 @@ app.post("/", function(req, res) {
     method: "POST",
     headers: {
       Authorization: "vivekg 861a5ed979b08e4b9e7133d90e426617-us20"
-    },
-    body: jsonData
+    }
+    //body: jsonData
   };
 
   // 3) request
@@ -66,9 +66,11 @@ app.post("/failure", function(req, res) {
   res.redirect("/");
 });
 
-app.listen(3000, function() {
+app.listen(process.env.POR || 3000, function() {
   console.log("Running server on PORT 3000...");
 });
 
 //mailchimp api key= 861a5ed979b08e4b9e7133d90e426617-us20
 //mailchimp list uniqueid = 553286706c
+//test your app before you deploy, test on localhost
+//create a Procfile
